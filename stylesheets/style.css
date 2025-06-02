@@ -1,7 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 * {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+.playfair-display {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+h3{
+  text-align: left;
+  text-indent: 2em;
+}
+ul, ol {
+  list-style-position: inside;
+  text-align: left;
+  text-indent: 3em;
+}
+
+#titulo{
+    font-size: 45px;
+}
+.martel-semibold {
+  font-family: "Martel", serif;
+  font-weight: 600;
+  font-style: normal;
+  text-align: left;
+}
+body {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.work-sans {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
 nav > ul {
+  color:rgb(255, 251, 217);
   list-style: none;
   padding-left: none;
   margin: 0;
@@ -12,6 +52,15 @@ nav > ul {
   flex-direction: row;
   -ms-flex-item-align: center;
 }
+#nv a {
+  color: rgb(0, 0, 0); /* Cambia este valor por el color que desees */
+  text-decoration: none; /* Opcional: quita el subrayado */
+}
+
+#nv a:hover {
+  color: rgb(0, 0, 0); /* Color al pasar el mouse (hover), opcional */
+}
+
 .contenedor {
     display: grid;
     grid-template-columns: 30% 70%;
@@ -46,10 +95,25 @@ nav > ul {
 
 }
 #photo{
-    width:12vw;
+    width:20vw;
     height: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+}
+.mi-tabla {
+  border-collapse: collapse; /* colapsa los bordes para un look más limpio */
+  width: 100%; /* opcional: ocupa todo el ancho disponible */
+}
+.mi-tabla th,
+.mi-tabla td {
+  padding: 12px 16px; /* espacio interno: 12px arriba/abajo, 16px izquierda/derecha */
+  text-align: left;   /* alinea el texto a la izquierda */
+  border-bottom: 1px solid #ccc; /* línea entre filas (opcional) */
+}
+footer p{
+    background-color: rgb(255, 251, 217);
+    text-align: center;
+    font-style: italic;
 }
