@@ -3,168 +3,267 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Currículum de Andres Pino</title>
-    <meta name="keywords" content="CV, Currículum, Andres Pino, habilidades, experiencia">
-    <meta name="Name" content="Andres Pino">
-    <meta name="Contacts" content="[Tu Correo o Teléfono]">
-    <meta name="Skills" content="[Habilidad1, Habilidad2, Habilidad3]">
-    <meta name="Sumary" content="[Breve resumen profesional]">
-    <meta name="Education" content="[Tu educación]">
-    <meta name="References" content="Referencias personales">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Andrés Pino · Currículum Vitae</title>
+    <meta name="description" content="Currículum de Andrés Eduardo Pino González, estudiante de Ingeniería en Computación en la ESPOL.">
+    <meta name="author" content="Andrés Eduardo Pino González">
+    <meta name="theme-color" content="#1f3a5f">
+
+    <!-- Open Graph: vista previa al compartir el enlace -->
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Andrés Pino · Currículum Vitae">
+    <meta property="og:description" content="Estudiante de Ingeniería en Computación en la ESPOL.">
+    <meta property="og:image" content="photo/ww.jpeg">
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%231f3a5f'/><text x='50' y='66' font-size='48' text-anchor='middle' fill='white' font-family='Georgia'>AP</text></svg>">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Work+Sans:wght@400;500;600&display=swap">
     <link rel="stylesheet" href="stylesheets/style.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Martel:wght@200;300;400;600;700;800;900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-    </style>
 </head>
+
 <body>
-        <nav id="nv">
-            <ul>
-                <li><a href="#perfile">Nombre</a></li>
-                <li><a href="#contact">Contacto</a></li>
-                <li><a href="#skills">Habilidades</a></li>
-                <li><a href="#education">Educación</a></li>
-                <li><a href="#references">Referencias</a></li>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <header class="site-header">
+        <nav class="nav" aria-label="Secciones del currículum">
+            <a class="nav__brand" href="#inicio">AP</a>
+            <ul class="nav__list">
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#educacion">Educación</a></li>
+                <li><a href="#referencias">Referencias</a></li>
+                <li><a class="nav__cta" href="#contactar">Contactar</a></li>
             </ul>
         </nav>
-    <section class="contenedor"> 
-        <aside class="leftcont">
-            <section id="perfile" class="perfil">
-                <img id="photo" src="photo/ww.jpeg" alt="Foto de perfil" style="display: block; margin: 0 auto; border-radius: 50%;">
-                <p>Andres Eduardo Pino Gonzalez</p>
-                <p>Estudiante de la 
-                    <a href="https://www.espol.edu.ec/" target="_blank">Escuela Superior Politecnica del Litoral</a></p>
-                <section class="video-container">
-                    <iframe 
-                        src="https://www.youtube.com/embed/SIXQqe2uXxs" 
+    </header>
+
+    <div class="layout" id="inicio">
+        <aside class="sidebar">
+            <div class="profile">
+                <img class="profile__photo" src="photo/ww.jpeg" alt="Fotografía de Andrés Pino" width="180" height="180">
+                <h1 class="profile__name">Andrés Eduardo Pino González</h1>
+                <p class="profile__role">Estudiante de Ingeniería en Computación</p>
+                <p class="profile__school">
+                    <a href="https://www.espol.edu.ec/" target="_blank" rel="noopener">Escuela Superior Politécnica del Litoral</a>
+                </p>
+            </div>
+
+            <section class="sidebar__block" aria-labelledby="contacto-titulo">
+                <h2 class="sidebar__title" id="contacto-titulo">Contacto</h2>
+                <address class="contact-list">
+                    <a href="mailto:andresp190704@gmail.com">
+                        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M3 5h18v14H3z M3 6l9 7 9-7"/></svg>
+                        andresp190704@gmail.com
+                    </a>
+                    <a href="tel:+593985531582">
+                        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2"/></svg>
+                        098 553 1582
+                    </a>
+                    <span>
+                        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 21s-7-6.5-7-12a7 7 0 0 1 14 0c0 5.5-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>
+                        Guayaquil, Ecuador
+                    </span>
+                </address>
+            </section>
+
+            <section class="sidebar__block" aria-labelledby="blandas-titulo">
+                <h2 class="sidebar__title" id="blandas-titulo">Habilidades blandas</h2>
+                <ul class="tags">
+                    <li>Comunicación efectiva</li>
+                    <li>Trabajo en equipo</li>
+                    <li>Trabajo bajo presión</li>
+                    <li>Adaptabilidad</li>
+                    <li>Liderazgo</li>
+                </ul>
+            </section>
+
+            <section class="sidebar__block" aria-labelledby="video-titulo">
+                <h2 class="sidebar__title" id="video-titulo">Mi universidad</h2>
+                <div class="media-frame">
+                    <iframe
+                        src="https://www.youtube-nocookie.com/embed/SIXQqe2uXxs"
                         title="Recorrido por la ESPOL"
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        loading="lazy"
+                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen>
                     </iframe>
-                    <p>Me gusta aprender y mejorar mis habilidades, 
-                        me gusta la programacion y el desarrollo de software, 
-                        me gusta trabajar en equipo y ayudar a los demas
-                    </p>
-                </section>
-            </section>
-            <section id="contact">
-                <h2 class="subtitle martel-semibold">Contacto</h2>
-                <p>Correo: andresp190704@gmail.com</p>
-                <p>Telefono: 098 553 1582</p>
-            </section>
-            <section id="skills">
-                <h2 class="subtitle martel-semibold">Habilidades</h2>
-                <ol>
-                    <li>Comunicacion Efectiva</li>
-                    <li>Programacion</li>
-                    <li>Trabajo bajo presion</li>
-                </ol>
-                <h2 class="subtitle martel-semibold">Office</h2>
-                <table class="mi-tabla" style="border-collapse: collapse;">
-                    <tr>
-                        <th></th>
-                        <th class="playfair-display">Nivel</th>
-                    </tr>
-                    <tr>
-                        <th class="playfair-display">Word</th>
-                        <td class="martel-semibold">Avanzado</td>
-                    </tr>
-                    <tr>
-                        <th class="playfair-display">Excel</th>
-                        <td class="martel-semibold">Intermedio</td>
-                    </tr>
-                    <tr>
-                        <th class="playfair-display">PowerPoint</th>
-                        <td class="martel-semibold">Intermedio</td>
-                    </tr>        
-                    <tr>
-                        <th class="playfair-display">Microsoft Project</th>
-                        <td class="martel-semibold">Intermedio</td>
-                    </tr>
-                </table>
+                </div>
             </section>
         </aside>
-        <main class="rigcont">
-            <h1 class="playfair-display" id="titulo">Currículum Vitae de Andres Pino</h1>
-            <h2 class="playfair-display">Ing. en Computación</h2>
-            <h2 class="martel-semibold">Acerca de mi</h2>
-            <p>
-                Actualmente me encuentro cursando mi quinto ciclo de la carrera. He participado en proyectos que requieren contacto con el cliente y un analisis de sus necesidades,
-                lo que me ha permitido mejorar mis habilidades de comunicación y adaptabilidad. Por otro lado he desarrollado conocimietos
-                en JAVA, PYTHON, C.
-            </p>
-            <section id="education">
-                <h2 class="martel-semibold">Educación</h2>
-                <ul>
-                    <li>Colegio Sagrada Familia</li>
-                    <li>Colegio Particular Mundo America</li>
-                    <li>Escuela Superior Politecnica del Litoral (Actual)</li>
+
+        <main class="content" id="contenido">
+            <section class="hero" id="sobre-mi" aria-labelledby="sobre-mi-titulo">
+                <p class="eyebrow">Currículum Vitae</p>
+                <h2 class="hero__title" id="sobre-mi-titulo">Ingeniería en Computación</h2>
+                <p class="hero__lead">
+                    Me gusta aprender y mejorar mis habilidades, la programación y el desarrollo de software,
+                    trabajar en equipo y ayudar a los demás.
+                </p>
+                <p>
+                    Actualmente curso el quinto ciclo de la carrera. He participado en proyectos que requieren
+                    contacto con el cliente y análisis de sus necesidades, lo que me ha permitido mejorar mis
+                    habilidades de comunicación y adaptabilidad. También he desarrollado conocimientos en
+                    Java, Python y C, además de maquetación web con HTML y CSS.
+                </p>
+            </section>
+
+            <section class="section" id="habilidades" aria-labelledby="habilidades-titulo">
+                <h2 class="section__title" id="habilidades-titulo">Habilidades técnicas</h2>
+
+                <h3 class="section__subtitle">Lenguajes y tecnologías</h3>
+                <ul class="tech-grid">
+                    <li><span class="tech-grid__icon" aria-hidden="true">&lt;/&gt;</span>HTML5</li>
+                    <li><span class="tech-grid__icon" aria-hidden="true">{ }</span>CSS3</li>
+                    <li><span class="tech-grid__icon" aria-hidden="true">J</span>Java</li>
+                    <li><span class="tech-grid__icon" aria-hidden="true">Py</span>Python</li>
+                    <li><span class="tech-grid__icon" aria-hidden="true">C</span>C</li>
+                    <li><span class="tech-grid__icon" aria-hidden="true">DB</span>Bases de datos</li>
                 </ul>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d997.3364341280774!2d-79.96705223042282!3d-2.147557464825397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d13d1149cd9fd%3A0x355b20fc7f9fc1e4!2sEscuela%20Superior%20Polit%C3%A9cnica%20del%20Litoral!5e0!3m2!1ses!2sec!4v1716124824394!5m2!1ses!2sec"
-                    width="100%"
-                    height="300"
-                    style="border:0; border-radius: 8px;"
-                    allowfullscreen=""
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
+
+                <h3 class="section__subtitle">Microsoft Office</h3>
+                <div class="table-wrap">
+                    <table class="skill-table">
+                        <caption class="visually-hidden">Nivel de dominio en herramientas de Microsoft Office</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Herramienta</th>
+                                <th scope="col">Nivel</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Word</th>
+                                <td>
+                                    <meter class="level" min="0" max="3" value="3" aria-label="Avanzado"></meter>
+                                    <span class="badge badge--high">Avanzado</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Excel</th>
+                                <td>
+                                    <meter class="level" min="0" max="3" value="2" aria-label="Intermedio"></meter>
+                                    <span class="badge">Intermedio</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">PowerPoint</th>
+                                <td>
+                                    <meter class="level" min="0" max="3" value="2" aria-label="Intermedio"></meter>
+                                    <span class="badge">Intermedio</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Microsoft Project</th>
+                                <td>
+                                    <meter class="level" min="0" max="3" value="2" aria-label="Intermedio"></meter>
+                                    <span class="badge">Intermedio</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </section>
-            <section id="references">
-                <h2 class="subtitle martel-semibold">Referencias</h2>
-                <article>
-                    <h3 class="playfair-display">Veronica Ruiz</h3>
-                    <blockquote>"El miedo no es a fallar, es a no intentarlo"</blockquote>
-                    <p>Compañera que puede respaldar mis habilidades comunicacionales, de analisis de necesidades y mi liderazgo frente a trabajos en grupo</p>
-                </article>
-                <article>
-                    <h3 class="playfair-display">Luis Luna</h3>
-                    <blockquote>"La responsabilidad es una de las mayores virtudes del ser humano"</blockquote>
-                    <p>Compañero universitario con el que desarrollado proyectos, como el de Estadisticas y Sistemas de Base 
-                        de datos, puede dar fe de mi compromiso y responsabilidad en el trabajo. Asi como de mis habilidades en
-                        diferentes areas de la programación.                    
-                    </p>
-                </article>
-                <article>
-                    <h3 class="playfair-display">Lisdehil Triana</h3>
-                    <blockquote>"La parte mas dificil del cambio, es dar el primer paso"</blockquote>
-                    <p>Trabajadora de diversas areas, que puede demostrar mi labor y compromiso en cada proyecto personal, asi como 
-                        de mi capacidad de adaptacion y aprendizaje rapido.
-                    </p>
-                </article>
+
+            <section class="section" id="educacion" aria-labelledby="educacion-titulo">
+                <h2 class="section__title" id="educacion-titulo">Educación</h2>
+                <ol class="timeline" reversed>
+                    <li class="timeline__item timeline__item--current">
+                        <h3>Escuela Superior Politécnica del Litoral</h3>
+                        <p>Ingeniería en Computación · Cursando quinto ciclo</p>
+                    </li>
+                    <li class="timeline__item">
+                        <h3>Colegio Particular Mundo América</h3>
+                        <p>Educación secundaria</p>
+                    </li>
+                    <li class="timeline__item">
+                        <h3>Colegio Sagrada Familia</h3>
+                        <p>Educación básica</p>
+                    </li>
+                </ol>
+
+                <details class="map">
+                    <summary>Ver ubicación de la ESPOL</summary>
+                    <div class="media-frame media-frame--map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d997.3364341280774!2d-79.96705223042282!3d-2.147557464825397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d13d1149cd9fd%3A0x355b20fc7f9fc1e4!2sEscuela%20Superior%20Polit%C3%A9cnica%20del%20Litoral!5e0!3m2!1ses!2sec!4v1716124824394!5m2!1ses!2sec"
+                            title="Mapa de la ESPOL"
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </details>
             </section>
-        </main>     
-    </section>
-    <h2 class="martel-semibold">Para contactarme:</h2>
-    <section style="display: flex; justify-content: center;">   
-        <form action="#" method="post" style="display: flex; flex-direction: column; gap: 1em; max-width: 400px;">
-            <label>
-                Nombre completo:
-                <input type="text" name="nombre" required>
-            </label>
-            <label>
-                Motivo de contacto:
-                <select name="Motivo" required>
-                <option value="" disabled selected>Seleccione una opcion</option>
-                <option value="guayaquil">Consulta</option>
-                <option value="quito">Proyecto</option>
-                <option value="cuenca">Propuesta Laboral</option>
-                </select>
-            </label>
-            <fieldset style="border: none; padding: 0;">
-                <legend>Género:</legend>
-                <label><input type="radio" name="genero" value="masculino" required> Masculino</label>
-                <label><input type="radio" name="genero" value="femenino"> Femenino</label>
-                <label><input type="radio" name="genero" value="Transformer"> Otro</label>
-            </fieldset>
-            <label>
-                Comentarios:
-                <textarea name="comentarios" rows="4" required></textarea>
-            </label>
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
-    <footer>
-        <p>&copy; 2025 Andres Pino</p>
+
+            <section class="section" id="referencias" aria-labelledby="referencias-titulo">
+                <h2 class="section__title" id="referencias-titulo">Referencias</h2>
+                <div class="cards">
+                    <article class="card">
+                        <blockquote class="card__quote">“El miedo no es a fallar, es a no intentarlo.”</blockquote>
+                        <h3 class="card__name">Verónica Ruiz</h3>
+                        <p class="card__role">Compañera</p>
+                        <p>Puede respaldar mis habilidades comunicacionales, de análisis de necesidades y mi liderazgo en trabajos en grupo.</p>
+                    </article>
+                    <article class="card">
+                        <blockquote class="card__quote">“La responsabilidad es una de las mayores virtudes del ser humano.”</blockquote>
+                        <h3 class="card__name">Luis Luna</h3>
+                        <p class="card__role">Compañero universitario</p>
+                        <p>Hemos desarrollado juntos proyectos de Estadística y Sistemas de Bases de Datos. Puede dar fe de mi compromiso, responsabilidad y habilidades en distintas áreas de la programación.</p>
+                    </article>
+                    <article class="card">
+                        <blockquote class="card__quote">“La parte más difícil del cambio es dar el primer paso.”</blockquote>
+                        <h3 class="card__name">Lisdehil Triana</h3>
+                        <p class="card__role">Profesional de diversas áreas</p>
+                        <p>Puede dar fe de mi labor y compromiso en cada proyecto, así como de mi capacidad de adaptación y aprendizaje rápido.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section" id="contactar" aria-labelledby="contactar-titulo">
+                <h2 class="section__title" id="contactar-titulo">¿Hablamos?</h2>
+                <p>Escríbeme por una consulta, un proyecto o una propuesta laboral.</p>
+
+                <form class="form" action="mailto:andresp190704@gmail.com" method="post" enctype="text/plain">
+                    <div class="form__row">
+                        <div class="field">
+                            <label for="nombre">Nombre completo</label>
+                            <input id="nombre" name="nombre" type="text" autocomplete="name" placeholder=" " required minlength="3">
+                            <small class="field__error">Escribe al menos 3 caracteres.</small>
+                        </div>
+                        <div class="field">
+                            <label for="correo">Correo electrónico</label>
+                            <input id="correo" name="correo" type="email" autocomplete="email" placeholder=" " required>
+                            <small class="field__error">Introduce un correo válido.</small>
+                        </div>
+                    </div>
+
+                    <fieldset class="field field--choices">
+                        <legend>Motivo de contacto</legend>
+                        <div class="choices">
+                            <label class="choice"><input type="radio" name="motivo" value="consulta" required> Consulta</label>
+                            <label class="choice"><input type="radio" name="motivo" value="proyecto"> Proyecto</label>
+                            <label class="choice"><input type="radio" name="motivo" value="propuesta-laboral"> Propuesta laboral</label>
+                        </div>
+                    </fieldset>
+
+                    <div class="field">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" placeholder=" " required></textarea>
+                        <small class="field__error">El mensaje no puede estar vacío.</small>
+                    </div>
+
+                    <button class="button" type="submit">Enviar mensaje</button>
+                </form>
+            </section>
+        </main>
+    </div>
+
+    <footer class="site-footer">
+        <p>&copy; 2025 Andrés Pino · Hecho a mano con HTML y CSS</p>
+        <a href="#inicio">Volver arriba ↑</a>
     </footer>
 </body>
+
+</html>
